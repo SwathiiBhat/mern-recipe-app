@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://v1-recipe-api-92ace21d0c33.herokuapp.com/api/v1/recipes",
+    baseURL: "http://localhost:5000/api/v1/recipes",
     withCredentials: true,
 });
+
 
 export const getRecipes = async () => {
     try {
